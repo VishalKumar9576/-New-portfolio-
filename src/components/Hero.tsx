@@ -8,15 +8,15 @@ const Hero: React.FC = () => {
 
   const texts = [
     'Aspiring Data Scientist',
-    'AI/ML Enthusiast', 
+    'AI/ML Enthusiast',
     'Full Stack Developer',
-    'Python Developer'
+    'Python Developer',
   ];
 
   useEffect(() => {
     const timeout = setTimeout(() => {
       const current = texts[currentIndex];
-      
+
       if (isDeleting) {
         setCurrentText(current.substring(0, currentText.length - 1));
       } else {
@@ -54,7 +54,7 @@ const Hero: React.FC = () => {
                   Vishal Kumar
                 </span>
               </h1>
-              
+
               <div className="text-2xl md:text-4xl font-medium text-gray-700 dark:text-gray-300 h-16 flex items-center justify-center lg:justify-start">
                 <span className="border-r-2 border-blue-600 pr-2 animate-pulse">
                   {currentText}
@@ -63,7 +63,7 @@ const Hero: React.FC = () => {
             </div>
 
             <p className="text-xl text-gray-600 dark:text-gray-400 max-w-2xl leading-relaxed">
-              A B.Tech student from Jaipur, building future-ready solutions using Python, JavaScript, and AI. 
+              A B.Tech student from Jaipur, building future-ready solutions using Python, JavaScript, and AI.
               Passionate about creating intelligent and scalable tech solutions that make an impact.
             </p>
 
@@ -87,7 +87,7 @@ const Hero: React.FC = () => {
                 <Download size={20} className="group-hover:scale-110 transition-transform" />
                 <span>Download Resume</span>
               </button>
-              <button 
+              <button
                 onClick={scrollToAbout}
                 className="group border-2 border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white px-8 py-4 rounded-full font-medium transition-all duration-300 transform hover:scale-105 flex items-center space-x-2"
               >
@@ -97,7 +97,7 @@ const Hero: React.FC = () => {
             </div>
 
             <div className="flex justify-center lg:justify-start">
-              <button 
+              <button
                 onClick={scrollToAbout}
                 className="animate-bounce text-gray-400 hover:text-blue-600 transition-colors duration-300 p-2 rounded-full hover:bg-white/10"
               >
@@ -106,27 +106,27 @@ const Hero: React.FC = () => {
             </div>
           </div>
 
-          {/* Profile Image with Phone Mockup */}
+          {/* Profile Image */}
           <div className="order-1 lg:order-2 flex justify-center relative">
             <div className="relative">
-              {/* Main Profile Container */}
-              <div className="relative w-80 h-80 rounded-full bg-gradient-to-br from-blue-400 via-purple-500 to-pink-500 p-1 animate-spin-slow">
-                <div className="w-full h-full rounded-full bg-gradient-to-br from-blue-50 to-purple-50 dark:from-gray-800 dark:to-gray-700 flex items-center justify-center text-6xl font-bold text-gray-600 dark:text-gray-400 relative overflow-hidden">
-                  <div className="absolute inset-0 bg-gradient-to-br from-blue-600/20 to-purple-600/20 rounded-full"></div>
-                  <span className="relative z-10">VK</span>
-                </div>
+              <div className="relative w-80 h-80 rounded-full bg-gradient-to-br from-blue-400 via-purple-500 to-pink-500 p-1">
+                <img
+                  src="/IMG-20250717-WA0004.jpg"
+                  alt="Vishal Kumar"
+                  className="w-full h-full object-cover rounded-full border-4 border-white dark:border-gray-900"
+                />
               </div>
-              
+
               {/* Status Indicator */}
               <div className="absolute -top-4 -right-4 w-12 h-12 bg-green-500 rounded-full border-4 border-white dark:border-gray-900 flex items-center justify-center animate-pulse">
                 <span className="text-white text-xs font-bold">●</span>
               </div>
-              
+
               {/* Floating Elements */}
               <div className="absolute -top-8 -left-8 w-16 h-16 bg-blue-500/20 rounded-full blur-xl animate-float"></div>
               <div className="absolute -bottom-8 -right-8 w-20 h-20 bg-purple-500/20 rounded-full blur-xl animate-float delay-1000"></div>
               <div className="absolute top-1/2 -left-12 w-12 h-12 bg-pink-500/20 rounded-full blur-xl animate-float delay-2000"></div>
-              
+
               {/* Skill Tags Floating Around */}
               <div className="absolute -top-16 left-1/2 transform -translate-x-1/2 bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm px-4 py-2 rounded-full text-sm font-medium text-gray-700 dark:text-gray-300 shadow-lg animate-float">
                 Python

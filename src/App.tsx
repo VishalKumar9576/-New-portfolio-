@@ -9,6 +9,7 @@ import Footer from './components/Footer';
 import FloatingElements from './components/FloatingElements';
 import PhoneWidget from './components/PhoneWidget';
 import AnimatedBackground from './components/AnimatedBackground';
+import InternshipProjects from './components/InternshipProjects';
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -36,6 +37,7 @@ function App() {
         <About />
         <Skills />
         <Projects />
+        <InternshipProjects />
         <Contact />
       </main>
       <Footer />
